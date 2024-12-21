@@ -9,7 +9,9 @@ The bisection algorithm works by iteratively refining an interval that contains 
 The algorithm then calculates the midpoint:
 
 let **x = (L+U)/2**
+
 You have to find inverse function of *f(x)* let say *f^-1(x)*
+
 The function *f^-1(x)* is evaluated at x. Depending on whether *f^-1(x)* is greater than or less than **a**, the interval is updated:
 
 - If ***f^-1(x)* > a**, update **U = x**.

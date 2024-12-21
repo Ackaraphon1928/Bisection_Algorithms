@@ -1,6 +1,6 @@
 # The Bisection Algorithm
 
-I've learned an interesting algorithm during my university studies called the **bisection algorithm**. This algorithm is used to approximate the Mathematics function (let call *f(x)* of a number by narrowing down the interval where the solution lies. (It narrowing by 2 times of old interval so it called **bisection**)
+I've learned an interesting algorithm during my university studies called the **bisection algorithm**. This algorithm is used to approximate the Mathematics function (let call *f(x)*) of a number by narrowing down the interval where the solution lies. (It narrowing by 2 times of old interval so it called **bisection**)
 
 ## How It Works
 

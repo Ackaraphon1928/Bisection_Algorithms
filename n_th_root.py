@@ -1,4 +1,3 @@
-cnt = 1
 # inverse function of nth_root(x) is x^n
 # don't support negative value a
 # support case n>0 and n<1
@@ -11,9 +10,10 @@ if a<1 :
 if n<1 :
     U = 10e10
 L = 0
-limit_error = 10e-10
+threshold = 10e-10
 x = (U+L)/2
-while abs(x**n-a)>limit_error :
+cnt = 1
+while abs(x**n-a)>threshold :
     x = (U+L)/2
     print(f"Try : {cnt} |",f"{n}th_root({a}) =",x)
     if x**n >= a :

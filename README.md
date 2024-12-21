@@ -19,11 +19,12 @@ This process is repeated until the relative error between **10^x** and **a** is 
 
 ## Implementation
 
-Here, I will share the implementation of the bisection algorithm to approximate \(\log_{10}(a)\) in Python:
+Here, I will share the implementation of the bisection algorithm to approximate **log_{10}(a)** in Python:
 
 ```python
 def bisection_log10(a):
-    L, U = 0, a
+    L = 0
+    U = a
     x = (L + U) / 2
     while abs(10**x - a) > 1e-10 * a:
         if 10**x > a:
@@ -33,7 +34,6 @@ def bisection_log10(a):
         x = (L + U) / 2
     return x
 
-# Example usage
 a = float(input("Enter a number: "))
 result = bisection_log10(a)
 print(f"The approximate log10({a}) is {result}")

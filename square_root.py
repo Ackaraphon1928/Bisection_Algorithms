@@ -2,6 +2,8 @@ print("Program to find approximately value of sqrt(a)")
 a = float(input("input the value of a : "))
 U = a
 L = 0
+if a<1 :
+    U = 1
 limit_error = 10e-10
 x = (U+L)/2
 cnt = 1
